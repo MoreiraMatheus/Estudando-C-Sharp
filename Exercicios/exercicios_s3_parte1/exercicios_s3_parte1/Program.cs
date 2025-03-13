@@ -27,7 +27,7 @@
             int c = int.Parse(Console.ReadLine());
             Console.Write("D:");
             int d = int.Parse(Console.ReadLine());
-            Console.WriteLine($"O resultado da formula (A*B - C*D) será: {a*b-c*d}");*/
+            Console.WriteLine($"O resultado da formula (A*B - C*D) será: {a*b-c*d}");
 
             Console.WriteLine("\n---Exercicio 4---");
             Console.Write("Digite seu número, suas horas trabalhadas e quanto você recebe por hora(Separados por espaço): ");
@@ -35,7 +35,20 @@
             string numeroFuncionario = dadosFuncionario[0];
             int horasFuncionario = int.Parse(dadosFuncionario[1]);
             double valorHoraFuncionario = double.Parse(dadosFuncionario[2]);
-            Console.WriteLine($"Seus dados são: \nNUMBER = {numeroFuncionario}\nSALARY = U$ {horasFuncionario * valorHoraFuncionario:F2}");
+            Console.WriteLine($"Seus dados são: \nNUMBER = {numeroFuncionario}\nSALARY = U$ {horasFuncionario * valorHoraFuncionario:F2}");*/
+
+            Console.WriteLine("\n---Exercicio 5---");
+            Console.WriteLine("Informe o código, quantidade e valor de uma peça(Separados por espaço): ");
+            string[] peca1 = Console.ReadLine().Split(' ');
+            int quantidade1 = int.Parse(peca1[1]);
+            double valor1 = double.Parse(peca1[2]);
+            Console.WriteLine("Informe o código, quantidade e valor de outra peça(Separados por espaço): ");
+            string[] peca2 = Console.ReadLine().Split(' ');
+            int quantidade2 = int.Parse(peca2[1]);
+            double valor2 = double.Parse(peca2[2]);
+            Console.WriteLine($"VALOR A PAGAR: R$ {(quantidade1 * valor1)+(quantidade2 * valor2):F2}");
+
+            
         }
     }
 }
