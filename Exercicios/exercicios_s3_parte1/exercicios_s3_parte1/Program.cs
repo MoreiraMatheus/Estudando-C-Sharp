@@ -4,7 +4,9 @@
     {
         static void Main(String[] args)
         {
-            /*Console.WriteLine("---Exercicio 1---");
+            double pi = 3.14159; // utilizado nos exercicios 2 e 6
+
+            Console.WriteLine("---Exercicio 1---");
             Console.Write("Digite um número:");
             int n1 = int.Parse(Console.ReadLine());
             Console.Write("Digite outro número:");
@@ -12,7 +14,6 @@
             Console.WriteLine($"A soma desses dois valores é:{n1+n2}");
 
             Console.WriteLine("\n---Exercicio 2---");
-            double pi = 3.14159;
             Console.Write("Irei calcular a área de um circulo com base em um raio.\nDigite o valor do raio de um circulo:");
             double raio = double.Parse(Console.ReadLine());
             Console.WriteLine($"A Área do circulo será:{pi * Math.Pow(raio, 2):F4}");
@@ -35,7 +36,7 @@
             string numeroFuncionario = dadosFuncionario[0];
             int horasFuncionario = int.Parse(dadosFuncionario[1]);
             double valorHoraFuncionario = double.Parse(dadosFuncionario[2]);
-            Console.WriteLine($"Seus dados são: \nNUMBER = {numeroFuncionario}\nSALARY = U$ {horasFuncionario * valorHoraFuncionario:F2}");*/
+            Console.WriteLine($"Seus dados são: \nNUMBER = {numeroFuncionario}\nSALARY = U$ {horasFuncionario * valorHoraFuncionario:F2}");
 
             Console.WriteLine("\n---Exercicio 5---");
             Console.WriteLine("Informe o código, quantidade e valor de uma peça(Separados por espaço): ");
@@ -48,7 +49,19 @@
             double valor2 = double.Parse(peca2[2]);
             Console.WriteLine($"VALOR A PAGAR: R$ {(quantidade1 * valor1)+(quantidade2 * valor2):F2}");
 
-            
+            Console.WriteLine("\n---Exercicio 6---");
+            Console.WriteLine("Digite 3 números");
+            Console.Write("A: ");
+            double a6 = double.Parse(Console.ReadLine());
+            Console.Write("B: ");
+            double b6 = double.Parse(Console.ReadLine());
+            Console.Write("C: ");
+            double c6 = double.Parse(Console.ReadLine());
+            Console.WriteLine($"TRIANGULO: {(a6/2)*c6:F3}");
+            Console.WriteLine($"CIRCULO: {pi * Math.Pow(c6, 2):F3}");
+            Console.WriteLine($"TRAPEZIO: {(a6 + b6) * c6/2:F3}");
+            Console.WriteLine($"QUADRADO: {Math.Pow(b6,2):F3}");
+            Console.WriteLine($"RETANGULO: {a6 * b6:F3}");
         }
     }
 }
