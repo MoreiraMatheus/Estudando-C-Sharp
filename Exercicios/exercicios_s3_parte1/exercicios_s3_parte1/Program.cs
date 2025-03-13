@@ -4,7 +4,7 @@
     {
         static void Main(String[] args)
         {
-            Console.WriteLine("---Exercicio 1---");
+            /*Console.WriteLine("---Exercicio 1---");
             Console.Write("Digite um número:");
             int n1 = int.Parse(Console.ReadLine());
             Console.Write("Digite outro número:");
@@ -27,9 +27,15 @@
             int c = int.Parse(Console.ReadLine());
             Console.Write("D:");
             int d = int.Parse(Console.ReadLine());
-            Console.WriteLine($"O resultado da formula (A*B - C*D) será: {a*b-c*d}");
+            Console.WriteLine($"O resultado da formula (A*B - C*D) será: {a*b-c*d}");*/
 
             Console.WriteLine("\n---Exercicio 4---");
+            Console.Write("Digite seu número, suas horas trabalhadas e quanto você recebe por hora(Separados por espaço): ");
+            string[] dadosFuncionario = Console.ReadLine().Split(' ');
+            string numeroFuncionario = dadosFuncionario[0];
+            int horasFuncionario = int.Parse(dadosFuncionario[1]);
+            double valorHoraFuncionario = double.Parse(dadosFuncionario[2]);
+            Console.WriteLine($"Seus dados são: \nNUMBER = {numeroFuncionario}\nSALARY = U$ {horasFuncionario * valorHoraFuncionario:F2}");
         }
     }
 }
