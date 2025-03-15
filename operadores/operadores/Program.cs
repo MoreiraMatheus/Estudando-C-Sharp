@@ -28,7 +28,18 @@ namespace operadores
             Console.WriteLine(c5);
             Console.WriteLine(c6);
 
+            //Operadores lógicos
+            bool b1 = false;
+            bool b2 = true;
+            //Operador E
+            Console.WriteLine(b1 && b2);
+            //Operador Ou
+            Console.WriteLine(b1 || b2);
+            //Operador Não
+            Console.WriteLine(!b1);
+            Console.WriteLine(!b2);
 
+            //Ordem de precedência: ! > && > ||
         }
     }
 }
