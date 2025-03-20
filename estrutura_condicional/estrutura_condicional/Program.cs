@@ -1,6 +1,6 @@
 ﻿using System;
 
-class Program{
+class Program {
     static void Main(string[] args) {
 
         Console.WriteLine("\n---Simples---\n");
@@ -28,11 +28,10 @@ class Program{
 
         Console.WriteLine("Qual a hora atual?");
         int hora = int.Parse(Console.ReadLine());
-        if (hora < 12)
-        {
+        if (hora < 12) {
             Console.WriteLine("Bom dia!");
         }
-        else if (12 <= hora && hora < 18){
+        else if (12 <= hora && hora < 18) {
             Console.WriteLine("Boa tarde!");
         }
         else {
